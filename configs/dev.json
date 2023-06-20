@@ -1,0 +1,18 @@
+{
+    "postgresDB" : {
+        "host" : "localhost",
+        "user" : "postgres",
+        "password" : "Password",
+        "dbName" : "YahooFinanceDataDB",
+        "port" : "5432",
+        "sslmode" : "disable"
+    },
+    "yahooFinance" : {
+        "url" : "https://finance.yahoo.com/most-active"
+    },
+    "server" : {
+        "port" : "5005",
+        "syncTime1" : "20:00",
+        "syncTime2" : "00:00"
+    }
+}
