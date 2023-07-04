@@ -7,11 +7,12 @@ import (
 	_ "yahooscraper/docs"
 	"yahooscraper/internal/configs"
 	"yahooscraper/internal/db/repositories"
-	"yahooscraper/internal/server"
+	grpcserver "yahooscraper/internal/grpc_server"
 	"yahooscraper/internal/services"
 
-	"github.com/go-co-op/gocron"
 	"github.com/rs/zerolog/log"
+
+	"github.com/go-co-op/gocron"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -48,6 +49,9 @@ func main() {
 
 	job.StartAsync()
 
-	// Server Init
-	server.Init(db)
+	//// Server REST Init
+	//server.Init(db)
+
+	// Server gRPC Init
+	grpcserver.Init(db)
 }
