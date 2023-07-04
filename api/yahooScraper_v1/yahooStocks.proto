@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package yahooscraper_v1;
+
+option go_package = "yahooscraper/pkg/yahooscraper_v1;yahooscraper_v1";
+
+service YahooStocksService{
+    rpc GetAllValidStocks(GetAllValidStocksRequest) returns (GetAllValidStocksResponse);
+}
+
+message GetAllValidStocksRequest{   
+}
+
+message GetAllValidStocksResponse{
+    repeated Stocks stocks = 1;
+}
+
+message Stocks {
+    string symbol = 1;
+    string name = 2;
+    double price = 3;
+    double change = 4;
+    double percent_change = 5;
+    string volume = 6;
+    string market_cap = 7;
+    string pe_ratio = 8;
+    string created_at = 9;
+    int64 created_unix = 10;
+    string avg_volume_for_3_month = 11;
+}

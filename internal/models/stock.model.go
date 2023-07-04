@@ -3,6 +3,8 @@ package models
 import (
 	"time"
 
+	pb "yahooscraper/pkg/yahooScraper_v1"
+
 	"gorm.io/gorm"
 )
 
@@ -56,4 +58,22 @@ func (stock *Stock) ToDTO() StockResponceDto {
 	dto.CreatedUnix = stock.CreatedUnix
 
 	return dto
+}
+
+func (stock *Stock) ProtoStock() *pb.Stocks {
+	ps := pb.Stocks{}
+
+	ps.Symbol = stock.Symbol
+	ps.Name = stock.Name
+	ps.Price = stock.Price
+	ps.Change = stock.Change
+	ps.PercentChange = stock.PercentChange
+	ps.Volume = stock.Volume
+	ps.AvgVolumeFor_3Month = stock.AvgVolumeFor3Month
+	ps.MarketCap = stock.MarketCap
+	ps.PeRatio = stock.PERatio
+	ps.CreatedAt = stock.CreatedAt.UTC().String()
+	ps.CreatedUnix = stock.CreatedUnix
+
+	return &ps
 }

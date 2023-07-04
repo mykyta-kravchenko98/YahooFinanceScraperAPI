@@ -18,7 +18,8 @@ type PostgresDBConfig struct {
 }
 
 type ServerConfig struct {
-	Port      string `mapstructure:"port"`
+	RESTPort  string `mapstructure:"restPort"`
+	GRPCPort  string `mapstructure:"grpcPort"`
 	SyncTime1 string `mapstructure:"syncTime1"`
 	SyncTime2 string `mapstructure:"syncTime2"`
 }

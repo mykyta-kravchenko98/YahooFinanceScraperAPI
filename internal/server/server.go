@@ -19,7 +19,7 @@ var runOnce sync.Once
 // Start server
 func Init(db *gorm.DB) {
 	config := configs.GetConfig()
-	port := config.Server.Port
+	port := config.Server.RESTPort
 	router := router.New()
 
 	//DB AutoMigration
