@@ -3,7 +3,7 @@ package models
 import (
 	"time"
 
-	pb "yahooscraper/pkg/yahooScraper_v1"
+	pb "github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/pkg/yahooScraper_v1"
 
 	"gorm.io/gorm"
 )

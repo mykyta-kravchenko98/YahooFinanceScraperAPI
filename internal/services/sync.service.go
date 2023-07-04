@@ -1,8 +1,8 @@
 package services
 
 import (
-	"yahooscraper/internal/dataparser/yahoo"
-	"yahooscraper/internal/db/repositories"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/dataparser/yahoo"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/db/repositories"
 )
 
 type syncService struct {

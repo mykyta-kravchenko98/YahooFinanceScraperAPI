@@ -5,11 +5,12 @@ import (
 	"fmt"
 	"log"
 	"net"
-	pb "yahooscraper/pkg/yahooScraper_v1"
 
-	"yahooscraper/internal/configs"
-	"yahooscraper/internal/db/repositories"
-	"yahooscraper/internal/services"
+	pb "github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/pkg/yahooScraper_v1"
+
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/configs"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/db/repositories"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/services"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"

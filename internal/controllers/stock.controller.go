@@ -2,9 +2,10 @@ package controllers
 
 import (
 	"net/http"
-	"yahooscraper/internal/models"
-	"yahooscraper/internal/services"
-	"yahooscraper/utils"
+
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/models"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/services"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/utils"
 
 	"github.com/labstack/echo/v4"
 )

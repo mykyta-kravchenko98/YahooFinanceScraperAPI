@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"yahooscraper/internal/models"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/models"
 
 	"gorm.io/gorm"
 )

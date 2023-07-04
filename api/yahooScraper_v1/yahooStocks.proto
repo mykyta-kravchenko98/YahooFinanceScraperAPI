@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package yahooscraper_v1;
 
-option go_package = "yahooscraper/pkg/yahooscraper_v1;yahooscraper_v1";
+option go_package = "github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/pkg/yahooscraper_v1;yahooscraper_v1";
 
 service YahooStocksService{
     rpc GetAllValidStocks(GetAllValidStocksRequest) returns (GetAllValidStocksResponse);

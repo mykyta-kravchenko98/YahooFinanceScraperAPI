@@ -1,8 +1,8 @@
 package services
 
 import (
-	"yahooscraper/internal/db/repositories"
-	"yahooscraper/internal/models"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/db/repositories"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/models"
 )
 
 type stockService struct {

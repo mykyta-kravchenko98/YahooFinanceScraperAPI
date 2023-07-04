@@ -1,4 +1,4 @@
-module yahooscraper
+module github.com/mykyta-kravchenko98/YahooFinanceScraperAPI
 
 go 1.20
 

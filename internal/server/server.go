@@ -2,12 +2,13 @@ package server
 
 import (
 	"sync"
-	"yahooscraper/internal/configs"
-	"yahooscraper/internal/controllers"
-	"yahooscraper/internal/db/repositories"
-	"yahooscraper/internal/models"
-	"yahooscraper/internal/router"
-	"yahooscraper/internal/services"
+
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/configs"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/controllers"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/db/repositories"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/models"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/router"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/services"
 
 	"github.com/labstack/echo/v4"
 	echoSwagger "github.com/swaggo/echo-swagger"

@@ -4,11 +4,12 @@ import (
 	"fmt"
 	"os"
 	"time"
-	_ "yahooscraper/docs"
-	"yahooscraper/internal/configs"
-	"yahooscraper/internal/db/repositories"
-	grpcserver "yahooscraper/internal/grpc_server"
-	"yahooscraper/internal/services"
+
+	_ "github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/docs"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/configs"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/db/repositories"
+	grpcserver "github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/grpc_server"
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/services"
 
 	"github.com/rs/zerolog/log"
 

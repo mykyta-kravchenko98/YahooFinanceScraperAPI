@@ -6,7 +6,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	"yahooscraper/internal/models"
+
+	"github.com/mykyta-kravchenko98/YahooFinanceScraperAPI/internal/models"
 
 	"github.com/gocolly/colly"
 	"github.com/rs/zerolog/log"
