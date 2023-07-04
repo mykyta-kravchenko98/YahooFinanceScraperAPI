@@ -13,6 +13,7 @@ message GetAllValidStocksRequest{
 
 message GetAllValidStocksResponse{
     repeated Stocks stocks = 1;
+    int32 count = 2;
 }
 
 message Stocks {

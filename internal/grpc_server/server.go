@@ -34,7 +34,7 @@ func (s *grpcServer) GetAllValidStocks(ctx context.Context, req *pb.GetAllValidS
 		protoStocks = append(protoStocks, c.ProtoStock())
 	}
 
-	return &pb.GetAllValidStocksResponse{Stocks: protoStocks}, nil
+	return &pb.GetAllValidStocksResponse{Stocks: protoStocks, Count: int32(len(protoStocks))}, nil
 }
 
 // Start server
